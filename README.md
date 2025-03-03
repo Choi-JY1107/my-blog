@@ -10,6 +10,11 @@
 
 ### HttpResponse
 
+## Today I Did (TID)
+
+[개발 일지](docs/TID/README.md)
+
+
 ## RDBMS 엔진
 ### 1. TS + In Memory DB
 
