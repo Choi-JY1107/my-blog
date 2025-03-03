@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "프레임워크 없이 내 블로그 만들기",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r tsconfig-paths/register dist/server.js",
+    "dev": "ts-node -r tsconfig-paths/register src/server.ts"
   },
   "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.4.7"
-  },
   "devDependencies": {
     "@types/node": "^22.13.8",
+    "dotenv": "^16.4.7",
+    "module-alias": "^2.2.3",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.8.2"
   }
 }
