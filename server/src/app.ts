@@ -1,11 +1,10 @@
 import { createServer, Socket } from "net";
 import { HttpRequest } from "@http/httpRequest.model";
-import { parseHttpRequest } from "@http/http.util";
+import { parseHttpRequest } from "@http/http.service";
 
 const server = createServer((socket: Socket) => {
     socket.on("data", (requestBuffer: Buffer) => {
-        const requestString = requestBuffer.toString();
-        const httpRequest: HttpRequest | null = parseHttpRequest(requestString);
+        const httpRequest: HttpRequest | null = parseHttpRequest(requestBuffer);
 
         console.log(httpRequest);
     });
