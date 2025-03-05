@@ -2,9 +2,9 @@
 
 ## ☀️ 오늘 한 것
 - http 모듈의 유효성 검사를 service가 아니라 model로 이전 -> 이 마저도 validator를 거치도록 수정  
-  - **고민한 사항** : 유효성 검사를 어디에서 수행할지 (model vs service)  
-  - **해결한 근거** : 객체 생성 시점에 검증이 이루어져야 일관성이 유지됨.  
-  - **해결 방안** : model 내부에서 validator를 호출하여 생성자에서 자동으로 검증 수행.  
+  - **고민한 사항** : 유효성 검사를 어디에서 수행할지 (model vs service)
+  - **해결한 근거** : 객체 생성 시점에 검증이 이루어져야 일관성이 유지됨
+  - **해결 방안** : model 내부에서 validator를 호출하여 생성자에서 자동으로 검증 수행
 
 <br>
 
@@ -30,6 +30,13 @@ const value2 = 0 ?? "기본값"; // 0 (Falsy 값은 무시됨)
 
 - `??` : `null` 또는 `undefined`일 때만 오른쪽 값을 반환
 - `||`와 차이점 : `0`, `false`, `` 같은 Falsy 값은 그대로 유지됨
+
+### 3. typescript 빌드 시, path-alias가 적용이 안 되는 현상
+
+- path-alias 관련 라이브러리는 총 3개
+  - `tsconfig-paths` : Typescript 런타임에서 Path Alias 지원
+  - `module-alias` : Node.js 런타임에서 Path Alias 지원
+  - `tsc-alias` : Typescript 빌드 시, Path Alias를 실제 경로로 변환
 
 <br>
 
