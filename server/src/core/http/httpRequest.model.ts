@@ -1,5 +1,5 @@
-import { HTTP_CRLF, HTTP_SEPARATOR, HttpMethod, HttpVersion } from "@http/http.constants";
-import { validateHttpRequestLine, validateHttpRequestHeaders } from "@http/http.validator";
+import { HTTP_CRLF, HTTP_SEPARATOR, HttpMethod, HttpVersion } from "@core/http/http.constants";
+import { validateHttpRequestLine, validateHttpRequestHeaders } from "@core/http/http.validator";
 
 export class HttpRequestLine {
     readonly method: HttpMethod;

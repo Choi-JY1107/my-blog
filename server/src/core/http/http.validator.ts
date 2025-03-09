@@ -1,5 +1,5 @@
-import { HTTP_ERROR_MESSAGES, HTTP_METHODS, HTTP_VERSIONS } from "@http/http.constants";
-import { HttpMethod, HttpVersion } from "@http/http.constants";
+import { HTTP_ERROR_MESSAGES, HTTP_METHODS, HTTP_VERSIONS } from "@core/http/http.constants";
+import { HttpMethod, HttpVersion } from "@core/http/http.constants";
 
 export const validateHeaderSection = (headerSection: string): void => {
     if (!headerSection) {

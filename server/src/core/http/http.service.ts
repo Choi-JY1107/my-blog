@@ -1,6 +1,6 @@
-import { HttpRequest } from "@http/httpRequest.model";
-import { HTTP_CRLF } from "@http/http.constants";
-import { validateHeaderSection } from "@http/http.validator";
+import { HttpRequest } from "@core/http/httpRequest.model";
+import { HTTP_CRLF } from "@core/http/http.constants";
+import { validateHeaderSection } from "@core/http/http.validator";
 
 export const parseHttpRequest = (requestBuffer: Buffer): HttpRequest => {
     const requestString = requestBuffer.toString();
