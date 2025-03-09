@@ -29,14 +29,21 @@
 
 <br>
 
-## 프레임워크 없이 구현하기
-### Http 모듈
 
-## Today I Did (TID)
+## ☀️ Today I Did (TID)
 
 [개발 일지](docs/TID/README.md)
 
-## RDBMS 엔진
+<br>
+
+## ⚒️ 프레임워크 없이 구현하기
+### Http 모듈
+- `server/src/core/http`
+
+<br>
+
+
+## 📀 RDBMS 엔진
 ### 1. TS + In Memory DB
 
 ### 2. TS + fs
