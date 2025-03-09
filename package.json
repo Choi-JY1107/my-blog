@@ -6,8 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:server": "tsc --project tsconfig.json --rootDir server --outDir dist/server && tsc-alias",
     "build": "npm run build:server",
-    "start": "node -r tsconfig-paths/register dist/server/src/app.js",
-    "dev": "ts-node -r tsconfig-paths/register server/src/app.ts"
+    "start": "node -r tsconfig-paths/register dist/server/src/application/main.js",
+    "dev": "ts-node -r tsconfig-paths/register server/src/application/main.ts"
   },
   "license": "ISC",
   "devDependencies": {

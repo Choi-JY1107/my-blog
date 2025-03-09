@@ -1,6 +1,7 @@
 import { createServer, Socket } from "net";
-import { HttpRequest } from "@http/httpRequest.model";
-import { parseHttpRequest } from "@http/http.service";
+import { HttpRequest } from "@core/http/httpRequest.model";
+import { parseHttpRequest } from "@core/http/http.service";
+import { PORT } from "@application/main.contant"
 
 const server = createServer((socket: Socket) => {
     socket.on("data", (requestBuffer: Buffer) => {
@@ -10,6 +11,6 @@ const server = createServer((socket: Socket) => {
     });
 });
 
-server.listen(8080, () => {
-    console.log("서버가 8080 포트에서 실행 중...");
+server.listen(PORT, () => {
+    console.log(`서버가 ${PORT} 포트에서 실행 중...`);
 });
