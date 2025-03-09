@@ -27,3 +27,46 @@ export const HTTP_SEPARATOR = {
     KEY_VALUE: "=",
     HEADER: ":"
 };
+
+// HTTP 상태 코드 (enum 활용)
+export enum STATUS_CODE {
+    OK = 200,
+    CREATED = 201,
+    ACCEPTED = 202,
+    NO_CONTENT = 204,
+    FOUND = 302,
+    BAD_REQUEST = 400,
+    UNAUTHORIZED = 401,
+    FORBIDDEN = 403,
+    NOT_FOUND = 404,
+    INTERNAL_SERVER_ERROR = 500,
+    BAD_GATEWAY = 502,
+    SERVICE_UNAVAILABLE = 503
+}
+
+// HTTP 상태 메시지 (Map 활용)
+export const STATUS_MESSAGE = new Map<number, string>([
+    [STATUS_CODE.OK, "OK"],
+    [STATUS_CODE.CREATED, "Created"],
+    [STATUS_CODE.ACCEPTED, "Accepted"],
+    [STATUS_CODE.NO_CONTENT, "No Content"],
+    [STATUS_CODE.FOUND, "Found"],
+    [STATUS_CODE.BAD_REQUEST, "Bad Request"],
+    [STATUS_CODE.UNAUTHORIZED, "Unauthorized"],
+    [STATUS_CODE.FORBIDDEN, "Forbidden"],
+    [STATUS_CODE.NOT_FOUND, "Not Found"],
+    [STATUS_CODE.INTERNAL_SERVER_ERROR, "Internal Server Error"],
+    [STATUS_CODE.BAD_GATEWAY, "Bad Gateway"],
+    [STATUS_CODE.SERVICE_UNAVAILABLE, "Service Unavailable"]
+]);
+
+// 기본 HTTP 상태 코드
+export const DEFAULT_STATUS_CODE = STATUS_CODE.NOT_FOUND;
+
+// 기본 HTTP 응답 헤더 (string 타입으로 통일)
+export const DEFAULT_RESPONSE_HEADER: Readonly<Record<string, string>> = Object.freeze({
+    "Content-Type": "application/json"
+});
+
+export const DEFAULT_MIME_TYPE = "application/octet-stream";
+export const NOT_FOUND_MESSAGE = "404 Not Found";
