@@ -14,12 +14,13 @@
 
 ## 📺 현재 상황
 
-<img width="841" alt="Image" src="https://github.com/user-attachments/assets/f6df158c-db6c-4e52-a3a2-cd7f30f1092d" />
+<img width="479" alt="Image" src="https://github.com/user-attachments/assets/c7771da4-d7ba-4243-a0e1-44bfa374a05e" />
 
 https://github.com/user-attachments/assets/1cd55b62-4c34-4ee0-b1ee-3a53944c618e
 
 - static인 파일을 불러오는 기능 구현
 - url 접속 시, 메인화면이 뜨는 기능 구현
+- polygon 구현
 
 <br>
 
